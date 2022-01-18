@@ -1,0 +1,128 @@
+.app{
+  background:linear-gradient( rgb(8, 8, 8), rgb(47, 6, 158)) ;
+  min-height: 100vh;
+  
+}
+header{
+  padding: 20px;
+  background: rgb(12, 12, 66);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.create{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 70vh;
+  max-width: 600px;
+  width:100%;
+  min-width: 150px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.que{
+   background: white;  
+  width: 100%;
+  text-align: center;
+  border-radius:5px ;
+}
+.question{
+  border-radius: 5px;
+  width: 100%;
+  padding: 7px;
+  outline: none;
+
+}
+.option{
+ align-self: flex-start; 
+ display: flex;
+ align-items: center;
+}
+.opt{
+  padding: 7px;
+  border-radius: 5px;
+  
+  width:90%;
+  
+}
+.radio{
+  margin-left: 5px;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: none;
+}
+
+.add{
+  padding: 10px 20px;
+  border-radius: 5px;
+  background:linear-gradient( rgba(179, 58, 21, 0.952),black);
+  color: white;
+  border: none;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  background: none;
+
+}
+nav a{
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.active{
+  color: rgb(25, 28, 214);
+}
+
+.container{
+  display: flex;
+  color:white;
+  justify-content: space-evenly;
+  border:1px solid black;
+  align-items: center; 
+}
+
+.container p{
+ text-align: center;
+  padding: 10px;
+  flex-basis: 14%;
+  border: 1px solid rgba(221, 220, 220, 0.767);
+ 
+}
+#delete{
+  flex-basis: 10%;
+  padding: 5px;
+  border: none;
+}
+.del{
+  background: red;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px; 
+}
+.msg{
+  color:rgb(31, 25, 25);
+  background: rgb(5, 173, 5);
+  text-align: center;
+  width:100vw;
+  padding: 10px;
+}
+
+@media (max-width:768px){
+ .container{
+   flex-direction: column;
+ } 
+ .container p{
+   border: none;
+ }
+}
